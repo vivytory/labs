@@ -1,0 +1,31 @@
+body ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #0b56ea
+}
+
+li {
+    padding: 20px 10px;
+}
+
+li::after {
+    content: ">";
+    padding: 20px;
+}
+
+li:last-child::after {
+    content: ""; 
+}
+
+span {
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+}

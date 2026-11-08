@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.block{
+    border: 1px solid black;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    min-height: 350px;
+}
+
+header, footer{
+    height: 200px;
+}
+
+aside {
+    width: 30%;
+}
+
+div {
+    width: 70%;
+ }

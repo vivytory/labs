@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f8f8f8;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    width: 320px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+form input {
+    border: 1px solid #ccc;
+    height: 35px;
+    margin: 5px;
+}
+
+form button {
+    border: 1px solid #ccc;
+    height: 35px;
+    margin: 5px;
+}
+
+.button{
+   background-color: #1cbc11;
+   color: white;
+}
+
+.button:hover {
+   background-color: #14a20a;
+}
+

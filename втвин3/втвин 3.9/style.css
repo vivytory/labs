@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ @font-face {
+        font-family:'Equestria_Cyrillic';
+        src: url(equestria_cyrillic.ttf);
+    }
+
+    body {
+        font-family: 'Equestria_Cyrillic';
+    }
+
+header ul {
+    font-size: 20px;
+    background-color: rgb(199, 73, 227);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 100px;
+    padding: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+
+}
+
+header a:hover {
+    background-color: rgb(211, 12, 184);
+    color: black;
+}
+
+.all {
+    display: flex;
+    gap: 15px;
+}
+
+.left, .right {
+    width: 30%
+}
+
+.center {
+    width: 60%;
+}
+
+img {
+    width: 100%;
+}
+
+.rarity-jpg {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rainbow-jpg {
+   margin-top: 10px;
+   margin-bottom: 5px; 
+}
+.dash-jpg {
+    height: 140px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.apple-webp {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+article h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+margin-top: 20px;
+background-color:  rgb(227, 209, 227);
+padding-top: 10px;
+padding-bottom: 30px;
+}
+
+footer .section {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    background-color: rgb(229, 93, 163);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#history, #fans, #lessons, #magic {
+   flex: 1;
+   background-color: rgb(227, 209, 227);
+   padding: 10px;
+}
+
+#link {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}

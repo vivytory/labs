@@ -1,0 +1,55 @@
+
+.space {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.space img {
+    position: absolute;
+}
+
+.blue {
+    z-index: 1;
+    top: 30px;
+    left: 196px;
+}
+
+.bigblue {
+    top: 88px;
+    left: 65px;
+    z-index: 2;
+}
+
+.brown {
+    z-index: 3;
+    top: 150px;
+    left: 125px;
+}
+
+.superman {
+    z-index: 1;
+    top: 329px;
+    left: 490px;
+}
+
+.ufo {
+    z-index: 3;
+    top: 289px;
+    left: 100px;
+}
+
+.asteroid {
+    z-index: 3;
+    top: 70px;
+    left: 430px;
+}
+
+.spaceship {
+    z-index: 2;
+    top: 150px;
+    left: 140px;
+}

@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body ul { 
+padding: 20px;
+color: rgb(0, 0, 0);
+list-style: none;
+display: flex;
+justify-content: center;
+}
+ 
+.all a {
+text-decoration: none;
+color: black;
+}
+
+.all > li {
+    background-color: rgb(135, 229, 73);
+    position: relative;
+    padding: 10px 150px;
+}
+ 
+.all li:hover {
+    background-color: rgb(238, 74, 170);
+}
+
+.list {
+    background-color: rgb(238, 74, 170);
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 100%;
+    list-style: none;
+    padding: 0;
+    
+}
+
+.list li {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 150px;
+}
+
+.list li:hover {
+    background-color: rgb(149, 16, 93);
+    color: white;
+}
+
+.list li:hover a {
+    color: white;
+}
+
+.dropdown:hover .list {
+    display: block;
+}
+

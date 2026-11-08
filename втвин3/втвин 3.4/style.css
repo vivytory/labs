@@ -1,0 +1,28 @@
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    text-align: center;
+    border: 1px solid purple;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgb(96, 255, 33);
+    padding: 15px;
+    z-index: 1;
+}
+
+body{
+    padding-top: 55px;
+}
+
+p {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 10px 20px;
+}
+
+
+
