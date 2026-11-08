@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.all {
+    display: grid;
+    grid-template-columns:400px;
+    grid-template-rows: 120px 50px 400px;
+    gap: 12px;
+    margin: 10px;
+}
+
+.all div {
+    border: 1px solid black;
+}
+
+.first {
+    background: repeating-linear-gradient(to bottom ,black 0px,black 4px,white 4px,white 8px);
+}
+
+.second {
+    background: repeating-linear-gradient(45deg, red 0px, red 3px,white 4px,white 7px );
+}
+
+.third {
+    background: repeating-radial-gradient(circle at center, black 0px, black 4px, white 4px, white 8px);
+}

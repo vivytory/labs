@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.all {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(40px, 1fr));
+    grid-template-rows: repeat(3, minmax(60px, 1fr));
+    gap: 20px;
+    max-width: 400px;
+    margin: 40px;
+}
+
+.text {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+}
+
+@media (max-width:768px) {
+    .all  {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, minmax(60px,auto));
+    }
+}

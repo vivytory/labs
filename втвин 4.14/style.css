@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.all {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: #9fbac6;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.tower { /* башня*/
+  position: absolute;
+  bottom: 120px;
+  left: 110px;
+  width: 50px;
+  height: 150px;
+  background-color: #fff;
+}
+
+.tower::before {  /* крышка */
+  content: '';
+  position: absolute;
+  top: -39px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 40px solid #d35448;
+}
+
+.tower::after {   /* окошко*/
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  width: 18px;
+  height: 20px;
+  background-color: #575656;
+}
+
+.house { /* дом*/
+  position: absolute;
+  bottom: 120px;
+  left: 159px;
+  width: 140px;
+  height: 60px;
+  background-color: #fff;
+}
+
+.house::after { /* крыша верх*/
+  content: '';
+  position: absolute;
+  top: -47px;
+  left: 0px;
+  width: 120px;
+  height: 41px;
+  background-color: #d35448;
+}
+
+.house::before { /* крыша низ*/
+  content: '';
+  position: absolute;
+  top: -18px;
+  left: -25px;
+  width: 166.3px;
+  height: 19.5px;
+  background-color: #d35448;
+  clip-path: polygon(0% 0, 85% 0, 100% 100%, 0% 100%);
+}
+
+.windows {
+  position: absolute;
+  bottom: 141px; 
+  right: 120px;
+  display: flex;
+  gap: 15px; 
+}
+
+.windows-group { /* окна*/
+  display: flex;
+  gap: 6px; 
+}
+
+.window {
+  width: 15px;
+  height: 25px;
+  background-color: #666666;
+}
+
+.cloud {
+  position: absolute;
+  background-color: white; 
+  border-radius: 50px 50px 0 0;
+  animation: float 8s linear infinite; 
+
+}
+
+.cloud-left {
+  width: 90px;
+  height: 20px;
+  top: 40px;
+  left: 10%;
+}
+
+.cloud-left::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  background-color: inherit;
+  bottom: 0;
+  left: 0;
+  border-radius: 30px 30px 0 0;
+}
+
+.cloud-left::after {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 15px;
+  background-color: inherit;
+  bottom: 0;
+  right: 5px;
+  border-radius: 20px 20px 0 0;
+}
+
+.cloud-center {
+  width: 52px;  
+  height: 25px; 
+  top: 110px;   
+  left: 35%;    
+  border-radius: 90px 90px 0 0; 
+}
+  
+.cloud-right {
+  width: 85px;
+  height: 20px;
+  top: 70px;
+  left: 65%;
+}
+
+.cloud-right::before {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 15px;
+  background-color: inherit;
+  bottom: 0;
+  left: 5px;
+  border-radius: 20px 20px 0 0;
+}
+
+.cloud-right::after {
+  content: '';
+  position: absolute;
+  width: 55px;
+  height: 28px;
+  background-color: inherit;
+  bottom: 0;
+  right: 0;
+  border-radius: 30px 30px 0 0;
+}
+
+@keyframes float {
+  0% { 
+    transform: translateX(-400px); 
+  }
+  100% { 
+    transform: translateX(500px);
+  }
+}

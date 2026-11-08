@@ -1,0 +1,47 @@
+.all {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fce4d6;
+    padding: 15px;
+    height: 100%;
+}
+
+.title {
+    text-align: center;
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.text {
+    font-size: 10px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.block {
+    height: 60px;
+    width: 100%;
+    margin-top: auto;
+}  
+
+.text {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+}  
+
+img {
+    width: 20px;
+    vertical-align: middle;
+}   
+

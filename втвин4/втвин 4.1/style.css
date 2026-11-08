@@ -1,0 +1,28 @@
+textarea {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 70px;
+    width: 300px;
+    height: 120px;
+    display: block;
+}
+
+.both {
+    margin-top: 20px;
+}
+
+.both {
+    resize: both;
+}
+
+.none {
+    resize: none;
+}
+
+.horizontal {
+    resize: horizontal;
+}
+
+.vertical {
+    resize: vertical;
+}

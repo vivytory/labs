@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.all {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1000px;
+    gap: 20px 35px;
+    margin: 20px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.images {
+    display: flex;
+    gap: 3px;
+}
+
+.images img {
+    width: 48%;
+}
+
+.first {
+    filter: grayscale();
+}
+
+.second {
+    filter: saturate(0.5);
+}
+
+.third {
+    filter: invert();
+}
+
+.fourth {
+     filter: sepia();
+}
+
+.fifth {
+    filter: hue-rotate(90deg);
+}
+
+.sixth {
+    filter: contrast(0.603);
+}
+
